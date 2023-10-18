@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 80%;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#speechOutput {
+    margin-top: 10px; /* Adjust the margin as needed */
+}

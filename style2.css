@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: -1; /* Place the background behind other elements */
+}
+
+/* ... previous CSS code ... */
+
+.menu-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the background layer behind the menu */
+    background-image: url('Interior.png'); /* Add the background image URL here */
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Adjust the opacity of the background image as needed */
+}
+
+.menu-card {
+    position: relative; /* Ensure the menu card is positioned relative to the ::before layer */
+    background-color: #003030;
+    border: 5px solid #f3a654;
+    max-width: 70%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+/* ... rest of the CSS code ... */
+
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.food-image {
+    height: 100px; /* Adjust image height as needed */
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.food-title {
+    font-size: 24px;
+    color: #f3a654; /* Text color for titles */
+}
+
+.food-description {
+    font-size: 16px;
+    color: #ccc; /* Text color for descriptions */
+}
